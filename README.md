@@ -1,16 +1,176 @@
-# React + Vite
+# Team Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Team Task Manager is a full-stack web application designed to help teams organize projects, assign tasks, and track progress through a centralised workspace.
 
-Currently, two official plugins are available:
+The platform supports role-based access for administrators and members, enabling project management, task ownership, deadline tracking, and workspace analytics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live Application:** https://task-manager-khaki-xi.vercel.app/onboarding
 
-## React Compiler
+## Admin Credentials
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Email: utkarshrajsaxena12@gmail.com 
+Password: 12345678  
 
-## Expanding the ESLint configuration
+Note: These credentials are for demonstration purposes only. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+---
+
+## Overview
+
+This project was developed as part of a full-stack assignment to demonstrate practical implementation of:
+
+- Authentication and authorization
+- Role-based access control
+- Project and task management workflows
+- Dashboard design and state management
+- Database integration with Supabase
+
+---
+
+## Core Features
+
+### Authentication
+- User registration and login
+- Password reset workflow
+- Protected routes
+- Session management using Supabase Authentication
+
+### Role-Based Access
+**Admin**
+- Create and manage projects
+- Assign tasks to members
+- View project analytics and reports
+- Manage workspace members
+
+**Member**
+- Access assigned projects and tasks
+- Update task progress
+- Track deadlines and workspace activity
+
+### Project Management
+- Create, edit, and delete projects
+- Manage project details
+- Search and browse active projects
+- Workspace organization dashboard
+
+### Task Management
+- Create and assign tasks
+- Task status updates
+- Due date tracking
+- Priority management
+
+### Dashboard
+- Workspace summary
+- Active project overview
+- Task completion statistics
+- Team activity visibility
+
+### Calendar
+- Task scheduling interface
+- Deadline visibility
+- Weekly planning support
+
+---
+
+## Tech Stack
+
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- React Router DOM
+
+### Backend
+- Supabase
+  - Authentication
+  - PostgreSQL Database
+  - API services
+
+### Utilities
+- date-fns
+- clsx
+- tailwind-merge
+
+---
+
+## Project Structure
+
+```bash
+src/
+├── assets/
+├── components/
+├── context/
+├── hooks/
+├── lib/
+├── pages/
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+cd TeamTaskManager
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file:
+
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Build
+
+Production build:
+
+```bash
+npm run build
+```
+
+Preview build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Future Improvements
+
+- Real-time notifications
+- Team chat functionality
+- Drag-and-drop Kanban board
+- File attachments
+- Activity history logs
+
+---
+
+## Author
+
+Utkarsh Raj Saxena 
+22131011400
+Galgotias University
+
+---
